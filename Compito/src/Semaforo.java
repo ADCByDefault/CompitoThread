@@ -2,7 +2,7 @@ public class Semaforo {
     private int valore;
 
     public Semaforo(){
-        valore = 1;
+        valore = 2;
     }
 
     synchronized public void entra(){
@@ -13,11 +13,11 @@ public class Semaforo {
                 System.out.println("AHIA INCIDENTE NEL BOX");
             }
         }
-        valore = 0;
+        valore = valore -1;
     }
 
     synchronized public void libera(){
-        valore = 1;
+        valore = valore +1;
         notify();
     }
 }
