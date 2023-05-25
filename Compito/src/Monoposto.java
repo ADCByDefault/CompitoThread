@@ -34,7 +34,7 @@ public class Monoposto extends Thread{
                 
             }
         }catch(Exception e){
-            System.out.println("errore");
+            System.out.println("LA MACCHINA SI E' ROTTA");
         }
     } 
 }

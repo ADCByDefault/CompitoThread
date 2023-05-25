@@ -10,7 +10,7 @@ public class Semaforo {
             try{
                 wait();
             }catch(Exception e){
-                System.out.println("errore");
+                System.out.println("AHIA INCIDENTE NEL BOX");
             }
         }
         valore = 0;
